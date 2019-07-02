@@ -9,7 +9,7 @@ public class Product {
     @XmlAttribute
  private String manufacturer;
  private String model;
- private LocalDate dateOfManufacture;
+ private LocalDate manufactureDate;
  private String color;
  private Integer price;
  private Integer amount;
@@ -17,7 +17,7 @@ public class Product {
     public Product(String manufacturer, String model, LocalDate dateOfManufacture, String color, Integer price, Integer amount) {
         this.manufacturer = manufacturer;
         this.model = model;
-        this.dateOfManufacture = dateOfManufacture;
+        this.manufactureDate = dateOfManufacture;
         this.color = color;
         this.price = price;
         this.amount = amount;
@@ -40,11 +40,11 @@ public class Product {
     }
 
     public LocalDate getDateOfManufacture() {
-        return dateOfManufacture;
+        return manufactureDate;
     }
 
-    public void setDateOfManufacture(LocalDate dateOfManufacture) {
-        this.dateOfManufacture = dateOfManufacture;
+    public void setDateOfManufacture(LocalDate manufactureDate) {
+        this.manufactureDate = manufactureDate;
     }
 
     public String getColor() {
